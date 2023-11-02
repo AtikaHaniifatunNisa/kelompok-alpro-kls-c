@@ -1,0 +1,49 @@
+#Input dari pengguna
+JenisPizza = input("Pizza yang anda pesan:")
+crust = input("Pilih Crust:")
+ukuran = input("Pilih Ukuran:")
+
+#Inisialisasi hargapizza 
+hargapizza = 0
+#Inisialisasi Extracheese
+Extracheese = 0
+
+#Memilih jenis pizza
+if JenisPizza == "Frankfurter BBQ" or "Meat Monsta" or "Super Supreme" or "Super supreme chicken":
+#untuk "Personal" hargapizza Rp43.636 
+    if crust == "Pan":
+        if ukuran == "Personal":
+            hargapizza += 43.636
+            Extracheese += 13.636
+#Menginput apakah mau ditambah dengan extracheese? Yes/No
+            tambahancheese = input("Apakah mau menembah Extracheese? Yes/No")
+#Jika Yes maka hargapizza + Rp13.636
+            if tambahancheese == "Yes":
+                print("Terima kasih telah memesan Pizza Hut. Harga yang harus Anda bayar Rp. ", hargapizza + Extracheese)
+#Jika No maka langsung muncul hargapizza yang harus dibayar
+            else :
+                print("harga yang harus anda bayar adalah Rp43.636")
+#Untuk "Regular" hargapizza Rp100.909
+        elif  ukuran == "Regular":
+            hargapizza += 100.909
+            Extracheese += 16.364
+#Menginput apakah mau ditambah dengan extracheese? Yes/No
+            tambahancheese = input("Apakah mau menembah Extracheese? Yes/No")
+#Jika Yes maka hargapizza + Rp16.364
+            if tambahancheese == "Yes":
+                print("Terima kasih telah memesan Pizza Hut. Harga yang harus Anda bayar Rp. ", hargapizza + Extracheese)
+#Jika No maka langsung muncul hargapizza yang harus dibayar
+            else :
+                print("harga yang harus anda bayar adalah Rp100.099")
+#Untuk "Large" hargapizza Rp132.727
+        elif ukuran == "Large":
+            hargapizza += 132.727
+            Extracheese += 19.091
+#Menginput apakah mau ditambah dengan extracheese? Yes/No
+            tambahancheese = input("Apakah mau menembah Extracheese? Yes/No")
+#Jika Yes maka hargapizza + Rp19.091
+            if tambahancheese == "Yes":
+                print("Terima kasih telah memesan Pizza Hut. Harga yang harus Anda bayar Rp. ", hargapizza + Extracheese)
+#Jika No maka langsung muncul hargapizza yang harus dibayar
+            else :
+                print("harga yang harus anda bayar adalah Rp132.727")
