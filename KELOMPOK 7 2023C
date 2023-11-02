@@ -47,6 +47,7 @@ if JenisPizza == "Frankfurter BBQ" or "Meat Monsta" or "Super Supreme" or "Super
 #Jika No maka langsung muncul hargapizza yang harus dibayar
             else :
                 print("harga yang harus anda bayar adalah Rp132.727")
+
 #program untuk pilihan crust StuffedCrust Cheese
     elif crust == "StuffedCrust Cheese":
 #untuk "Personal" harga pizza Rp55.455
